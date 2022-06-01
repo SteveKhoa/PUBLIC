@@ -1,5 +1,5 @@
 
-# Public uploads
+# Public uploads.
 
 This repository contains my public uploads.
 
