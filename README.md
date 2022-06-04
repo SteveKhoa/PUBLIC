@@ -8,4 +8,6 @@ Give a star ⭐ if you find this helpful!
 ----------------------------------------------------------------------------------
 **Contents:**
 
+    Projects.
+
 1. [Evaluating expressions in C++ (School assignment) (May, 2022)](https://stevekhoa.github.io/discrete_assignment/Report.pdf)
