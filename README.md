@@ -3,8 +3,6 @@
 
 This repository contains my public uploads.
 
-Give a star ⭐ if you find this helpful!
-
 ----------------------------------------------------------------------------------
 **Contents:**
 
