@@ -1,5 +1,5 @@
 
-:mag: # C++ memory leak detector.
+# C++ memory leak detector. :mag:
 
 To use:
 1. Download `memleak.h` from this repository.
