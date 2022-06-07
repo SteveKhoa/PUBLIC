@@ -1,5 +1,5 @@
 
-# C++ memory leak detector. :mag:
+# C++ memory leak detector. :mag: (C++11 and before)
 
 **To use:**
 
