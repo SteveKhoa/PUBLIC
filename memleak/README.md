@@ -29,7 +29,7 @@ int main()
 
 `bool isLeak();` : return boolen value indicating whether the memory is leaked or not.
 
-**:ledger: Example**
+**:ledger: Example:**
 
 ```C++
 #include <iostream>
