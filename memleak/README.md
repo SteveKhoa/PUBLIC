@@ -27,4 +27,42 @@ int main()
 }
 ```
 
-`bool isLeak();`
+`bool isLeak();` : return boolen value indicating whether the memory is leaked or not.
+
+**Example**
+
+```C++
+#include <iostream>
+#include "memleak.h"
+
+class Object
+{
+  char* name;
+  int size;
+public:
+  Object() : name(NULL), size(0) {}
+  ~Object() {}
+};
+
+int main()
+{
+  {
+    int *arr = new int[10];
+    Object foo;
+  }
+  leak_print();
+  
+  if (isLeak())
+    std::cout << "The memory is leaked!" << std::endl;
+  
+  return 0;
+}
+```
+Result:
+```
+--- Leakage Check Result ---
+[0] : Memory leakage detected!
+Total leakage      : 40 bytes.
+-> Called 'new'    : 1 times.
+-> Called 'delete' : 0 times.
+```
