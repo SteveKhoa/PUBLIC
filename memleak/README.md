@@ -7,7 +7,7 @@
 2. Put it and your source code in the same folder.
 3. Include the header using: `#include "memleak.h"`.
 
-**Functions:**
+** :bulb: Functions:**
 
 `void leak_print();` : print leakage information.
 > It is recommended to put your code into a block `{}`, and use this function right after it.
@@ -29,7 +29,7 @@ int main()
 
 `bool isLeak();` : return boolen value indicating whether the memory is leaked or not.
 
-**Example**
+** :ledger: Example**
 
 ```C++
 #include <iostream>
