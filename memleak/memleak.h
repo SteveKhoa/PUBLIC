@@ -1,6 +1,8 @@
 #ifndef _LEAK_DETECTOR
 #define _LEAK_DETECTOR
 
+// https://github.com/SteveKhoa/PUBLIC/edit/main/memleak/memleak.h
+
 size_t used = 0;
 size_t deleted = 0;
 
