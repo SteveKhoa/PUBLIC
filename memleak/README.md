@@ -1,14 +1,15 @@
 
 # C++ memory leak detector. :mag:
 
-To use:
+**To use:**
+
 1. Download `memleak.h` from this repository.
 2. Put it and your source code in the same folder.
 3. Include the header using: `#include "memleak.h"`.
 
 **Functions:**
 
-`void leak_print();`
+`void leak_print();` : print leakage information.
 > It is recommended to put your code into a block `{}`, and use this function right after it.
 > For example:
 ```C++
