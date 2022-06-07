@@ -12,13 +12,18 @@ To use:
 > It is recommended to put your code into a block `{}`, and use this function right after it.
 > For example:
 ```C++
+int main()
 {
-int *Foo = new int[10];
-char *ptr = new char[17];
+  {
+    int *Foo = new int[10];
+    char *ptr = new char[17];
 
-delete Foo;
+    delete Foo;
+  }
+  leak_print();
+  
+  return 0;
 }
-leak_print();
 ```
 
 `bool isLeak();` : Check whether if the code is memory-leaked or not.
