@@ -8,7 +8,7 @@ To use:
 
 **Functions:**
 
-`void leak_print();` : print out the information about possible memory leakage.
+`void leak_print();`
 > It is recommended to put your code into a block `{}`, and use this function right after it.
 > For example:
 ```C++
@@ -26,4 +26,4 @@ int main()
 }
 ```
 
-`bool isLeak();` : Check whether if the code is memory-leaked or not.
+`bool isLeak();`
