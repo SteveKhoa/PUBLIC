@@ -1,7 +1,7 @@
 
 # Public uploads.
 
-This repository contains my public uploads.
+This repository contains my public uploads, including hobby projects and more!
 
 ----------------------------------------------------------------------------------
 **Contents:**
