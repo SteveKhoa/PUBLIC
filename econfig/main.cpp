@@ -6,6 +6,9 @@ using std::boolalpha;
 using std::cout;
 using std::endl;
 
+// Mechanism:
+//      use isFull() to check whether an orbital is full or not, if yes, then it finds the next orbital, and fill that next orbital.
+
 // Klechkowski's list
 std::string path[] =
     {
@@ -189,7 +192,7 @@ public:
     e_config() : curr(s(1)) {}
     ~e_config() {}
 
-    void set(int z)
+    void set(int z) // the same as adding electron, defined recursively.
     {
         if (z <= 0)
             return;
@@ -224,7 +227,8 @@ public:
 
 int main()
 {
-    // 42
+    // Test:
+    // Z = 42
     // 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d4
     e_config e;
     e.set(42);
