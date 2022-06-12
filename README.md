@@ -3,6 +3,8 @@
 
 This repository contains my public uploads, including hobby projects and more!
 
+https://stevekhoa.github.io/PUBLIC/
+
 ----------------------------------------------------------------------------------
 **Contents:**
 
