@@ -10,7 +10,7 @@
 **:bulb: Functions:**
 
 `void leak_print();` : print leakage information.
-> It is recommended to put your code into a block `{}`, and use this function right after it.
+> We should put our code for testing into a block `{}`, and use this function right after it.
 > For example:
 ```C++
 int main()
