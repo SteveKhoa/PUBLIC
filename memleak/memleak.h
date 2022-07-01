@@ -1,7 +1,7 @@
 #ifndef _LEAK_DETECTOR
 #define _LEAK_DETECTOR
 
-// https://github.com/SteveKhoa/PUBLIC/edit/main/memleak/memleak.h
+// https://github.com/SteveKhoa/PUBLIC/tree/main/memleak
 
 size_t used = 0;
 size_t deleted = 0;
@@ -30,25 +30,30 @@ void operator delete(void *ptr) throw()
 
 bool isLeak()
 {
-    if (constr - destr > 0)
-        return true;
-
-    return false;
+    if (constr - destr == 0 && used - deleted == 0)
+        return false;
+    return true;
 }
 
-void leak_print()
+void check_leak()
 {
-    std::cout << "--- Leakage Check Result ---\n";
+    std::cout << "---   Leakage Check Result   ---\n";
     std::cout << "[" << attempt++ << "] : ";
     if (isLeak())
     {
-        std::cout << "Memory leakage detected!"
+        std::cout << "[!] Leakage detected!"
                   << "\n";
         std::cout << "Total leakage      : " << used - deleted << " bytes."
                   << "\n";
-        std::cout << "-> Called 'new'    : " << constr << " times."
+        std::cout << "Memory used        : " << used << " bytes."
                   << "\n";
-        std::cout << "-> Called 'delete' : " << destr << " times."
+        std::cout << "Memory deleted     : " << deleted << " bytes"
+                  << "\n";
+
+        std::cout << "---   Infor                  ---\n";
+        std::cout << "-> 'new'    : " << constr << " times."
+                  << "\n";
+        std::cout << "-> 'delete' : " << destr << " times."
                   << "\n";
     }
     else
