@@ -1,20 +1,20 @@
 
-# simpleB - simple C++ benchmarking (c++11 and below)
+# :abacus: simpleB - simple C++ benchmarking (c++11 and below)
 
 Comprehensive and simple C++ benchmarking functions.
 
-**How to use**
+# **How to use**
 
 1. Download `simpleB.h` from this repository.
 2. Put it and your source code in the same folder.
 3. Include the header using: `#include "simpleB.h"`.
 
-**Features**
+# **Features**
 
 1. Check for memory leakage.
 2. Observe execution time.
 
-**:bulb: Functions:**
+# **:bulb: Functions:**
 
 1. Check for memory leakage
 
