@@ -14,9 +14,9 @@ Comprehensive and simple C++ benchmarking functions.
 1. Check for memory leakage.
 2. Observe execution time.
 
-# **:bulb: Functions:**
+# ** Functions:**
 
-1. Check for memory leakage
+**1. Check for memory leakage**
 
 1.1 `void checkleak();` : print leakage information.
 > We should put our code for testing into a block `{}`, and use this function right after it.
@@ -67,7 +67,7 @@ Result:
 [0] simpleB: Leakage detected. [ Total: 40 bytes | Average: 40 bytes ]
 ```
 
-2. Observe execution time
+**2. Observe execution time**
 
 2.1 `stopwatch.begin();` : begin the stopwatch.
 2.2 `stopwatch.end();` : end the stopwatch, and print the time out.
