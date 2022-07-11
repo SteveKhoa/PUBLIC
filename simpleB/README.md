@@ -14,7 +14,7 @@ Comprehensive and simple C++ benchmarking functions.
 1. Check for memory leakage.
 2. Observe execution time.
 
-# ** Functions:**
+# **Functions**
 
 **1. Check for memory leakage**
 
